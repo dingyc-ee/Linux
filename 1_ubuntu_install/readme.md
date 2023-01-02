@@ -46,13 +46,13 @@ sudo apt upgrade
 ```
 #### 软件卸载
 *1. LibreOffice*  
-`sudo apt remove libreoffice-common`
+`sudo apt remove libreoffice-common`  
 *2. Amazon*  
-`sudo apt remove unity-webapps-common`
+`sudo apt remove unity-webapps-common`  
 *3. 自动卸载*  
-`sudo apt-get autoremove`
+`sudo apt-get autoremove`  
 *4. 查看内核版本*  
-`uname -a`
+`uname -a`  
 ```sh
 ding@linux:~$ uname -a
 Linux linux 4.15.0-112-generic #113~16.04.1-Ubuntu SMP Fri Jul 10 04:37:08 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
