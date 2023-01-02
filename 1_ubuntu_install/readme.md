@@ -1,6 +1,6 @@
 ### Vmware安装Ubuntu
 #### 软件安装
-*1. open-vm-tool*
+*1. open-vm-tool* 
 `sudo apt install open-vm-tools-desktop`
 #### 更换壁纸
 ![壁纸](picture/El%20Capitan.jpg)
