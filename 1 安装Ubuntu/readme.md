@@ -22,6 +22,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo gedit /etc/apt/sources.list
 ```
 *3. 用以下内容替换全文件*  
+16.04阿里源
 ```sh
 deb https://mirrors.aliyun.com/ubuntu/ xenial main
 deb-src https://mirrors.aliyun.com/ubuntu/ xenial main
@@ -38,6 +39,24 @@ deb https://mirrors.aliyun.com/ubuntu/ xenial-security main
 deb-src https://mirrors.aliyun.com/ubuntu/ xenial-security main
 deb https://mirrors.aliyun.com/ubuntu/ xenial-security universe
 deb-src https://mirrors.aliyun.com/ubuntu/ xenial-security universe
+```
+22.04中科大源
+```sh
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+
+## Not recommended
+# deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 ```
 *4. 更新*  
 ```sh
