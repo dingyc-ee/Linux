@@ -76,3 +76,20 @@ sudo apt upgrade
 ding@linux:~$ uname -a
 Linux linux 4.15.0-112-generic #113~16.04.1-Ubuntu SMP Fri Jul 10 04:37:08 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ```
+
+#### Ubuntu10.04 apt-get修正换源
+
+*必须换源。老的源ubuntu官方已经不维护了，不能通过apt-get下载软件*
+
+```
+deb http://old-releases.ubuntu.com/ubuntu/ lucid main universe restricted multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ lucid main universe restricted multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ lucid-security universe main multiverse restricted
+deb-src http://old-releases.ubuntu.com/ubuntu/ lucid-security universe main multiverse restricted
+deb http://old-releases.ubuntu.com/ubuntu/ lucid-updates universe main multiverse restricted
+deb http://old-releases.ubuntu.com/ubuntu/ lucid-proposed universe main multiverse restricted
+deb-src http://old-releases.ubuntu.com/ubuntu/ lucid-proposed universe main multiverse restricted
+deb http://old-releases.ubuntu.com/ubuntu/ lucid-backports universe main multiverse restricted
+deb-src http://old-releases.ubuntu.com/ubuntu/ lucid-backports universe main multiverse restricted
+deb-src http://old-releases.ubuntu.com/ubuntu/ lucid-updates universe main multiverse restricted
+```
